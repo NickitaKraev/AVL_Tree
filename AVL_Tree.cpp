@@ -1,6 +1,3 @@
-// Ready Work.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 
 using namespace std;
@@ -104,25 +101,25 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	int size;
-	cout << "Ââåäèòå êîëè÷åñòâî ÷èñåë:";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã·Ã¨Ã±Ã¥Ã«:";
 	cin >> size;
 	int d;
 	node* root;
 	root = NULL;
 	for (int i = 1; i <= size; i++) {
-		cout << i << " ÷èñëî" << ":";
+		cout << i << " Ã·Ã¨Ã±Ã«Ã®" << ":";
 		cin >> d;
 		insert(root, d);
 	}
 	
-	cout << "Ðàñïå÷àòêà äåðåâà â ñèììåòðè÷íîì ïîðÿäêå:" << endl;
+	cout << "ÃÃ Ã±Ã¯Ã¥Ã·Ã Ã²ÃªÃ  Ã¤Ã¥Ã°Ã¥Ã¢Ã  Ã¢ Ã±Ã¨Ã¬Ã¬Ã¥Ã²Ã°Ã¨Ã·Ã­Ã®Ã¬ Ã¯Ã®Ã°Ã¿Ã¤ÃªÃ¥:" << endl;
 	output(root);
 	clear(&root);
 	if (!root) {
-		cout << endl << "Äåðåâî óñïåøíî î÷èùåíî" << endl;
+		cout << endl << "Ã„Ã¥Ã°Ã¥Ã¢Ã® Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã®Ã·Ã¨Ã¹Ã¥Ã­Ã®" << endl;
 	}
 	else {
-		cout << endl << "Îøèáêà óäàëåíèÿ!" << endl;
+		cout << endl << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¿!" << endl;
 		system("pause");
 	}
 	return 0;
